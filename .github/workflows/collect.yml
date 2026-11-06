@@ -1,0 +1,42 @@
+# Copies the day's run logs and standings from Alpha Bazaar's public API into data/ and commits them if anything
+# changed. No secrets: the API is public, and the push uses this workflow's own token.
+name: Collect
+
+on:
+  schedule:
+    # 23:15 UTC, Monday to Friday: after the house bots' evening runs (6:15 p.m. in New York in winter, 7:15 in summer).
+    - cron: "15 23 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Collect
+        run: python collect.py
+
+      - name: Commit changes
+        run: |
+          git add data README.md
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Data for $(date -u +%Y-%m-%d)"
+          git push
