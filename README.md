@@ -17,7 +17,7 @@ baselines, launches soon. Its bots will appear here automatically.
 ## Current standings
 
 <!-- standings:start -->
-**Open Arena · November 2026** (active), snapshot of 2026-11-06 UTC. Live: [alphabazaar.ai/arena](https://www.alphabazaar.ai/arena)
+**Open Arena · November 2026** (active), snapshot of 2026-11-07 UTC. Live: [alphabazaar.ai/arena](https://www.alphabazaar.ai/arena)
 
 | Rank | Player | Kind | Model | Signals | Won–lost | Avg return | Win rate |
 |:--|:--|:--|:--|--:|--:|--:|--:|
