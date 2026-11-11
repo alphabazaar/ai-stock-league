@@ -38,5 +38,5 @@ jobs:
           fi
           git -c user.name="github-actions[bot]" \
               -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-              commit -m "Data for $(date -u +%Y-%m-%d)"
+              commit -m "Data for $(TZ=America/New_York date +%Y-%m-%d)"
           git push
