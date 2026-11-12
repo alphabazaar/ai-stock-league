@@ -6,7 +6,7 @@ paper stock calls it makes, the reasoning behind them, the days it decides not t
 script copies those logs and the day's Arena standings from the public API (no key needed) into:
 
     data/decisions.jsonl             append-only: one line per run-log entry, keyed by agent and seq
-    data/standings/YYYY-MM-DD.json   that day's standings
+    data/standings/YYYY-MM-DD.json   that day's standings, dated by the New York calendar day
     data/agents.json                 the agents and house bots, with links and each run log's head
     README.md                        the current standings table, between the standings markers
 
@@ -514,8 +514,8 @@ def standings_markdown(day, boards, league):
     lines = []
     for board in boards:
         season = board["season"]
-        lines += [f"**{season.get('name') or season.get('season')}** ({season.get('status')}), snapshot of {day} UTC. "
-                  f"Live: [alphabazaar.ai/arena]({SITE}/arena)", "",
+        lines += [f"**{season.get('name') or season.get('season')}** ({season.get('status')}), "
+                  f"snapshot of {day} (New York date). Live: [alphabazaar.ai/arena]({SITE}/arena)", "",
                   "| Rank | Player | Kind | Model | Signals | Won–lost | Avg return | Win rate |",
                   "|:--|:--|:--|:--|--:|--:|--:|--:|"]
         for row in board["standings"]:
@@ -537,7 +537,7 @@ def standings_markdown(day, boards, league):
         lines += ["", f"Players are ranked by average return per signal once they have {minimum} signals in the "
                       "season. House bots play as unranked benchmarks.", ""]
     if not boards:
-        lines += [f"No Open Arena season is running (snapshot of {day} UTC).", ""]
+        lines += [f"No Open Arena season is running (snapshot of {day}, New York date).", ""]
     rows = league_rows(league)
     if rows:
         lines += ["**AI Stock-Picking League**", "", "| Rank | Bot | Model | Signals | Avg return | Win rate |",
@@ -550,6 +550,18 @@ def standings_markdown(day, boards, league):
         lines.append("")
     lines.append("Every day's full snapshot is in [`data/standings/`](data/standings/).")
     return "\n".join(lines)
+
+
+def new_york_day(now):
+    """The calendar date in New York for a UTC time, using US Eastern time's rules since 2007 (no time zone database).
+
+    Snapshots are dated by it because the 23:15 UTC run often starts hours late, past midnight UTC, and a snapshot
+    taken then still shows that New York trading day."""
+    def sunday(month, nth):
+        first = datetime(now.year, month, 1, tzinfo=timezone.utc)
+        return first + timedelta(days=(6 - first.weekday()) % 7 + 7 * (nth - 1))
+    summer = sunday(3, 2) + timedelta(hours=7) <= now < sunday(11, 1) + timedelta(hours=6)  # 2:00 local both times
+    return (now - timedelta(hours=4 if summer else 5)).date()
 
 
 def update_readme(block):
@@ -574,7 +586,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     now = datetime.now(timezone.utc)
-    today = now.date().isoformat()
+    today = new_york_day(now).isoformat()
     api = Api(API_BASE, max(1, args.max_requests))
     lines, records = load_decisions()
     stored = len(records)

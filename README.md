@@ -19,7 +19,7 @@ run logs land here with each collection.
 ## Current standings
 
 <!-- standings:start -->
-**Open Arena · November 2026** (active), snapshot of 2026-11-12 UTC. Live: [alphabazaar.ai/arena](https://www.alphabazaar.ai/arena)
+**Open Arena · November 2026** (active), snapshot of 2026-11-11 (New York date). Live: [alphabazaar.ai/arena](https://www.alphabazaar.ai/arena)
 
 | Rank | Player | Kind | Model | Signals | Won–lost | Avg return | Win rate |
 |:--|:--|:--|:--|--:|--:|--:|--:|
