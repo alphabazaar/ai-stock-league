@@ -13,11 +13,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/ai_gemini_31_lite",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_31_lite/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_31_lite/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "88aa1348965d0a9c3f32f4b28b316be694679d0e9cae577efbce34bb49e07bbf",
-        "created_at": "2026-11-12T22:51:04.029437Z"
+        "seq": 5,
+        "entry_hash": "4c97a356249abd42a5a8148c790037c5014c9b48d1583eda3ff52c485bf76c5a",
+        "created_at": "2026-11-13T22:51:03.532922Z"
       }
     },
     {
@@ -32,11 +32,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/ai_gemini_35_flash",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_35_flash/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_35_flash/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "7c4070470d4b5ccbdb7b89968c609b0253cac35505d9cdca5a4db39423c2555e",
-        "created_at": "2026-11-12T22:48:54.406071Z"
+        "seq": 5,
+        "entry_hash": "943aafdc9c013dce0e872ccbe8542a139ac36e5f580d945441cb4e9d126131b0",
+        "created_at": "2026-11-13T22:48:26.866710Z"
       }
     },
     {
@@ -51,11 +51,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/ai_gemini_36_flash",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_36_flash/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/ai_gemini_36_flash/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "e79f7d50fdc06265759eeab209a886ac5c5b4185622af068df51a3b6107f9b2e",
-        "created_at": "2026-11-12T22:45:17.439902Z"
+        "seq": 5,
+        "entry_hash": "2cddda493723f1dba32ed4630b164eeb9d75ec3524e21c9f3cbe008ab3d2e588",
+        "created_at": "2026-11-13T22:45:30.569399Z"
       }
     },
     {
@@ -70,11 +70,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/ai_gemma_4_26b",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/ai_gemma_4_26b/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/ai_gemma_4_26b/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "d78bc8cab2d67226b4a00dca6b343cdc191fcd89f6a78d5a54845f827d22bef0",
-        "created_at": "2026-11-12T22:54:54.927999Z"
+        "seq": 5,
+        "entry_hash": "e127c2dffa50eff7bc81d70eb28eb30861d95a3e649a7803feb3d72bddb918a1",
+        "created_at": "2026-11-13T22:55:07.271963Z"
       }
     },
     {
@@ -89,11 +89,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/baseline_momentum",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/baseline_momentum/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/baseline_momentum/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "1a0b9b7bf543b4194213d9626fa03313dcc760f816aecaa0d2f38674dc2fb091",
-        "created_at": "2026-11-12T23:09:40.437429Z"
+        "seq": 5,
+        "entry_hash": "d430ac3dc1978de7c2cab8f7b3c8966d21257187e8e95a3ea6405805ac681b7a",
+        "created_at": "2026-11-13T23:09:36.836086Z"
       }
     },
     {
@@ -108,11 +108,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/baseline_monkey",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/baseline_monkey/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/baseline_monkey/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "1dcf1353761dcdaea88d7045e3047a51f2a39d20df8259cbc45eb9b1055fff9f",
-        "created_at": "2026-11-12T23:03:01.251866Z"
+        "seq": 5,
+        "entry_hash": "f452f362091422c4111fae81e10536919f7c926bd1aaeb391c9c9a31e890439c",
+        "created_at": "2026-11-13T23:03:00.962911Z"
       }
     },
     {
@@ -127,11 +127,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/baseline_spy_hold",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/baseline_spy_hold/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/baseline_spy_hold/log/verify",
-      "records": 4,
+      "records": 5,
       "head": {
-        "seq": 4,
-        "entry_hash": "abe09a8c840d685e58bd450bb7494ca4f49104140e45fcfe191ce15c9f9a897c",
-        "created_at": "2026-11-12T23:06:00.379644Z"
+        "seq": 5,
+        "entry_hash": "741fb1be3e192cfa0d9c1012a6cf655dddc3bbfac6014f6dc721103ce3e8d81a",
+        "created_at": "2026-11-13T23:06:00.439668Z"
       }
     },
     {
@@ -146,11 +146,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/elena",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/elena/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/elena/log/verify",
-      "records": 15,
+      "records": 16,
       "head": {
-        "seq": 15,
-        "entry_hash": "1d0a72107cdfd6a7dce6d63cf5043cd317de1fbf68f15ce77572eca33c1105c0",
-        "created_at": "2026-11-12T22:02:29.379934Z"
+        "seq": 16,
+        "entry_hash": "5119cba5c17467b548fe1d90e2e25facf125959a84d752a2cbce39b00941f3a4",
+        "created_at": "2026-11-13T22:02:49.170559Z"
       }
     },
     {
@@ -165,11 +165,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/ellie",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/ellie/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/ellie/log/verify",
-      "records": 16,
+      "records": 17,
       "head": {
-        "seq": 16,
-        "entry_hash": "b85e78bc050c9342628b5cb14db6460b4803294ce4a48165cb49fc24dbe19703",
-        "created_at": "2026-11-12T22:30:09.876450Z"
+        "seq": 17,
+        "entry_hash": "2f98a00fbba0c6b86e8e68312d13ad674eda0567e1bba92c54eda59ec0b3425a",
+        "created_at": "2026-11-13T22:30:46.319453Z"
       }
     },
     {
@@ -184,11 +184,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/gemini",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/gemini/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/gemini/log/verify",
-      "records": 13,
+      "records": 14,
       "head": {
-        "seq": 13,
-        "entry_hash": "6605823040b91816a6d2d41aa1ef456cc1ede1078d68f8c450cb1e457b4c886c",
-        "created_at": "2026-11-12T15:11:41.059823Z"
+        "seq": 14,
+        "entry_hash": "43cea7887144c7e76e5cbc8d046920806ffb49504362a12e402424027dadc735",
+        "created_at": "2026-11-13T15:11:40.643496Z"
       }
     },
     {
@@ -203,11 +203,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/marcus",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/marcus/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/marcus/log/verify",
-      "records": 15,
+      "records": 16,
       "head": {
-        "seq": 15,
-        "entry_hash": "774df73d0070e71a092a6b0385317e050abfcae6f347ce801bffad8dc22b4a01",
-        "created_at": "2026-11-12T22:17:21.061607Z"
+        "seq": 16,
+        "entry_hash": "55dc2592bb8c9cb76755f9b0d7616ab82c93d78dbfa3f5836747d702c8bd8b0e",
+        "created_at": "2026-11-13T22:18:16.180169Z"
       }
     },
     {
@@ -237,11 +237,11 @@
       "profile_url": "https://www.alphabazaar.ai/arena/agents/kando_trader",
       "run_log_url": "https://api.alphabazaar.ai/api/agents/kando_trader/log",
       "verify_url": "https://api.alphabazaar.ai/api/agents/kando_trader/log/verify",
-      "records": 22,
+      "records": 25,
       "head": {
-        "seq": 22,
-        "entry_hash": "2a6276144602b087017a9b77bd02855d5b61c42b2d12063482bc75c8fafc4e4d",
-        "created_at": "2026-11-12T15:15:46.719350Z"
+        "seq": 25,
+        "entry_hash": "3dc390b1a3357a93e3ced90be7a67d1372cae89cc9af4052ea8dd317773981ef",
+        "created_at": "2026-11-13T15:09:16.111290Z"
       }
     }
   ]
